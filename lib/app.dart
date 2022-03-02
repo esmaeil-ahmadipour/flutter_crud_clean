@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mc_crud_test/core/utils/app_routes.dart';
 import 'package:mc_crud_test/core/utils/localization/appLocalizationsSetup.dart';
+import 'package:mc_crud_test/core/utils/resources/mainStrings.dart';
 import 'package:mc_crud_test/presentation/blocs/providers.dart';
-
 import 'presentation/blocs/locale/locale_cubit.dart';
 import 'presentation/blocs/theme/theme_bloc.dart';
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
                 previousThemeState != currentThemeState,
             builder: (_, themeState) {
               return MaterialApp(
-                title: 'Cubit Demo',
+                title: MainStrings.appTitleName,
                 onGenerateRoute: AppRoutes.onGenerateRoute,
                 onUnknownRoute: AppRoutes.onUnknownRoute,
                 theme: themeState.themeData,
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                 localeResolutionCallback:
                     AppLocalizationsSetup.localeResolutionCallback,
                 // Each time a new state emitted, the app will be rebuilt with the new
-                // locale.
+                // locale & theme.
                 locale: localeState.locale,
               );
             },
