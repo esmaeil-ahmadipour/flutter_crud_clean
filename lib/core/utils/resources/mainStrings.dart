@@ -1,6 +1,11 @@
 class MainStrings {
   MainStrings._();
 
+  // WebApi : using api from www.abstractapi.com , for check Bank-Account and Mobile-Number
+  static const phoneValidationBaseUrl="https://phonevalidation.abstractapi.com/v1/";
+  static const ibanValidationBaseUrl="https://ibanvalidation.abstractapi.com/v1/";
+  static const ibanValidationApiKey="c8ae5c2166c14f20bc2ffefe9381c701";
+  static const phoneValidationApiKey="a0553de8859146b0bb77839957069c94";
 
 // Database
   static const String customersTableName = 'customers_table';
