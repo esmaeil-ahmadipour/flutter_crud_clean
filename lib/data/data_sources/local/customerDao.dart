@@ -7,7 +7,7 @@ abstract class CustomerDao {
   @Query('SELECT * FROM ${MainStrings.customersTableName}')
   Future<List<Customer>> getCustomersList();
 
-  @Insert(onConflict: OnConflictStrategy.replace)
+  @Insert(onConflict: OnConflictStrategy.fail)
   Future<void> insertCustomer(Customer customer);
 
   @delete

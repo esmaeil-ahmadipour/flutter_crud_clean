@@ -1,4 +1,4 @@
-import 'package:mc_crud_test/data/datasources/local/appDatabase.dart';
+import 'package:mc_crud_test/data/data_sources/local/appDatabase.dart';
 import 'package:mc_crud_test/domain/entities/customer.dart';
 import 'package:mc_crud_test/domain/repositories/customerRepository.dart';
 

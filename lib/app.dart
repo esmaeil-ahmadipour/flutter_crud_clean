@@ -4,6 +4,7 @@ import 'package:mc_crud_test/core/utils/app_routes.dart';
 import 'package:mc_crud_test/core/utils/localization/appLocalizationsSetup.dart';
 import 'package:mc_crud_test/core/utils/resources/mainStrings.dart';
 import 'package:mc_crud_test/presentation/blocs/providers.dart';
+
 import 'presentation/blocs/locale/locale_cubit.dart';
 import 'presentation/blocs/theme/theme_bloc.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
                 localeResolutionCallback:
                     AppLocalizationsSetup.localeResolutionCallback,
                 // Each time a new state emitted, the app will be rebuilt with the new
-                // locale & theme.
+                // locale.
                 locale: localeState.locale,
               );
             },

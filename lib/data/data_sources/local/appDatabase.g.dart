@@ -150,8 +150,7 @@ class _$CustomerDao extends CustomerDao {
 
   @override
   Future<void> insertCustomer(Customer customer) async {
-    await _customerInsertionAdapter.insert(
-        customer, OnConflictStrategy.replace);
+    await _customerInsertionAdapter.insert(customer, OnConflictStrategy.fail);
   }
 
   @override

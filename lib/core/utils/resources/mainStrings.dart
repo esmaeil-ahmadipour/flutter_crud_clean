@@ -37,6 +37,14 @@ class MainStrings {
     "empty_validation":"This field should not be empty.",
     "account_number_limit": "This field must be 8 to 17 digits.",
     "incorrect_validation" : "The data in this field is incorrect.",
+    "select_date_of_birth" : "Please Select Date Of Birth.",
+    "select_country_code" : "Please Select Country Code.",
+    "email_address" : "Email Address",
+    "bank_account_number" : "Bank Account Number",
+    "mobile_number" : "Mobile Number",
+    "last_name" : "Last Name",
+    "first_name" : "First Name",
+    "add_new_customer_title": "Add a new customer",
     "app_title": "Flutter CRUD Test"
   };
   static const Map<String, String> _farsi = {
@@ -55,6 +63,14 @@ class MainStrings {
     "empty_validation": "این قسمت نباید خالی باشد.",
     "incorrect_validation" : "اطلاعات این بخش نادرست است.",
     "account_number_limit": "این قسمت باید 8 الی 17 رقم باشد.",
+    "email_address" : "آدرس ایمیل",
+    "bank_account_number" : "شماره حساب بانکی",
+    "select_date_of_birth" : "لطفا تاریخ تولد مشخص شود.",
+    "select_country_code" : "لطفا کد کشور مشخص شود.",
+    "mobile_number" : "شماره موبایل",
+    "last_name" : "نام خانوادگی",
+    "first_name" : "نام",
+    "add_new_customer_title": "افزودن مشتری جدید",
     "app_title": "آزمایش CRUD فلاتر"
   };
 

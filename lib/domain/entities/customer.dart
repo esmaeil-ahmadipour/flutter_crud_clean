@@ -6,7 +6,7 @@ import 'package:mc_crud_test/core/utils/resources/mainStrings.dart';
 class Customer extends Equatable {
   @PrimaryKey(autoGenerate: true)
   
-  final int id;
+  final int? id;
   final String firstName;
   final String lastName;
   final int dateOfBirth;
@@ -15,7 +15,7 @@ class Customer extends Equatable {
   final String bankAccountNumber;
 
   const Customer({
-    required this.id,
+     this.id,
     required this.firstName,
     required this.lastName,
     required this.dateOfBirth,
@@ -25,7 +25,7 @@ class Customer extends Equatable {
   });
 
   @override
-  List<Object> get props {
+  List<Object?> get props {
     return [
       id,
       firstName,
