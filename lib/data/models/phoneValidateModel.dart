@@ -4,8 +4,8 @@ class PhoneValidateModel extends PhoneValidate {
   const PhoneValidateModel({
     String? phone,
     bool? valid,
-    Format? format,
-    Country? country,
+    FormatModel? format,
+    CountryModel? country,
     String? location,
     String? type,
     String? carrier,
@@ -20,6 +20,7 @@ class PhoneValidateModel extends PhoneValidate {
 
   factory PhoneValidateModel.fromJson(Map<String, dynamic>? map) {
     if (map != null) {
+      print("MODEL:$map");
       return PhoneValidateModel(
         phone: map['phone'] as String,
         valid: map['valid'] as bool,
@@ -46,9 +47,9 @@ class FormatModel extends Format {
 
 
 
-  FormatModel.fromJson(Map<String, dynamic>? map) {
+  factory FormatModel.fromJson(Map<String, dynamic>? map) {
     if (map != null) {
-     FormatModel(
+      return FormatModel(
       international: map['international'] as String,
       local: map['local'] as String,
     );
@@ -72,9 +73,9 @@ class CountryModel extends  Country{
 
 
 
-  CountryModel.fromJson(Map<String, dynamic>? map) {
+  factory CountryModel.fromJson(Map<String, dynamic>? map) {
     if (map != null) {
-       CountryModel(
+      return  CountryModel(
           code: map['code'] as String,
           name: map['name'] as String,
           prefix: map['prefix'] as String

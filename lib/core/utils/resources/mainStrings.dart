@@ -2,10 +2,10 @@ class MainStrings {
   MainStrings._();
 
   // WebApi : using api from www.abstractapi.com , for check Bank-Account and Mobile-Number
-  static const phoneValidationBaseUrl="https://phonevalidation.abstractapi.com/v1/";
-  static const ibanValidationBaseUrl="https://ibanvalidation.abstractapi.com/v1/";
-  static const ibanValidationApiKey="c8ae5c2166c14f20bc2ffefe9381c701";
-  static const phoneValidationApiKey="a0553de8859146b0bb77839957069c94";
+  static const phoneValidationBaseUrl="https://phonevalidation.abstractapi.com/v1";
+  static const ibanValidationBaseUrl="https://openiban.com/validate";
+  static const ibanValidationApiKey="";
+  static const phoneValidationApiKey="98996a7b707141f29370b789ecf9cab7";
 
 // Database
   static const String customersTableName = 'customers_table';
@@ -44,6 +44,7 @@ class MainStrings {
     "mobile_number" : "Mobile Number",
     "last_name" : "Last Name",
     "first_name" : "First Name",
+    "submit_button" : "Submit",
     "add_new_customer_title": "Add a new customer",
     "app_title": "Flutter CRUD Test"
   };
@@ -70,6 +71,7 @@ class MainStrings {
     "mobile_number" : "شماره موبایل",
     "last_name" : "نام خانوادگی",
     "first_name" : "نام",
+    "submit_button" : "ثبت",
     "add_new_customer_title": "افزودن مشتری جدید",
     "app_title": "آزمایش CRUD فلاتر"
   };

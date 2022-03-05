@@ -5,8 +5,8 @@ class CountryInfo {
 
   CountryInfo(
       {required this.countryName,
-        required this.codeLetter,
-        required this.countryCode});
+      required this.codeLetter,
+      required this.countryCode});
 
   CountryInfo.fromJson(Map<String, dynamic> json) {
     countryName = json['country_name'];

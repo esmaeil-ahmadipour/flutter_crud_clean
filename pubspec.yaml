@@ -29,7 +29,8 @@ dev_dependencies:
   floor_generator: ^1.2.0
   retrofit_generator: ^3.0.1+1
   build_runner:
-
+  mockito: ^5.1.0
+  bloc_test: ^8.5.0
 flutter:
   uses-material-design: true
 #  assets:

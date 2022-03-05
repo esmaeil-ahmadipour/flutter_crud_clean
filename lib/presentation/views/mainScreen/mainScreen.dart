@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mc_crud_test/core/utils/di/injector.dart';
 import 'package:mc_crud_test/core/utils/localization/appLocalizations.dart';
-import 'package:mc_crud_test/core/utils/resources/mainStrings.dart';
 import 'package:mc_crud_test/presentation/blocs/customers/customersBloc.dart';
 import 'package:mc_crud_test/presentation/views/drawer/custom_drawer.dart';
 
+import '../../../core/utils/resources/mainStrings.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
